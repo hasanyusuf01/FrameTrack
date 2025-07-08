@@ -1,25 +1,53 @@
-# FrameTrack Pro — Full-Stack Inventory Management
-
-A complete full-stack web application for managing optical frame inventory across a distributor & shop network.  
-This repo contains:
-
-- **Django REST API** (backend)  
-- **React + Vite + Bootstrap** dashboard & shop portal (frontend)  
-
----
-
-## 🚀 Tech Stack
-
-- **Backend**: Django, Django REST Framework, PostgreSQL  
-- **Frontend**: React, Vite, Bootstrap, Axios  
-- **Configuration**: `django-environ` for `.env`  
-- **ORM**: Django’s built-in ORM  
-
----
-
-## 📁 Repository Structure
-
-
+# FrameTrack - Optical Business Management System  
+  
+A comprehensive full-stack application for managing optical business operations, built with React frontend and Django REST API backend.  
+  
+## 🚀 Features  
+  
+FrameTrack provides a complete solution for optical business management with the following key features:  
+  
+- **Shop Management System**: Complete shop administration and configuration [1](#1-0)   
+- **Product Search**: Advanced product search and filtering capabilities [2](#1-1)   
+- **User Authentication**: Token-based authentication system [3](#1-2)   
+- **Admin Interface**: Django admin interface for backend management [4](#1-3)   
+- **Shop Portal**: Multi-shop management interface [5](#1-4)   
+- **Inventory Management**: Complete inventory tracking and management [6](#1-5)   
+- **Sales Monitoring**: Real-time sales tracking and analytics [7](#1-6)   
+- **Billing System**: Integrated billing and invoice management [8](#1-7)   
+- **Reporting**: Comprehensive business reporting tools [9](#1-8)   
+  
+## 🛠️ Technology Stack  
+  
+### Frontend  
+- **React**: Modern React framework with hooks and component composition [10](#1-9)   
+- **Vite**: Fast build tool and development server [11](#1-10)   
+- **React Router**: Client-side routing  
+- **Modern UI Components**: Responsive design with modern styling  
+  
+### Backend  
+- **Django 5.2.4**: Web framework for the API backend [12](#1-11)   
+- **Django REST Framework**: RESTful API development [13](#1-12)   
+- **Token Authentication**: API authentication system [3](#1-2)   
+- **CORS Headers**: Cross-origin resource sharing support [14](#1-13)   
+- **Custom User Model**: Extended user authentication [15](#1-14)   
+  
+## 📋 Prerequisites  
+  
+Before setting up the project, ensure you have the following installed:  
+  
+- **Node.js** (v18 or higher)  
+- **npm** or **yarn**  
+- **Python** (v3.8 or higher)  
+- **pip** (Python package manager)  
+  
+## 🚀 Installation and Setup  
+  
+### 1. Clone the Repository  
+  
+```bash  
+git clone https://github.com/hasanyusuf01/FrameTrack.git  
+cd FrameTrack
+```
 ---
 
 ## 📋 Prerequisites
@@ -142,14 +170,6 @@ CREATE TABLE bill_items (
 );
 
 
-
-## 🔧 Backend Setup
-
- **Clone** the repo  
-   ```bash
-   git clone <repo-url>
-   cd repo/backend
-```
 
 ### Backend
 Navigate to and run
