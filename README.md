@@ -31,7 +31,6 @@ FrameTrack provides a complete solution for optical business management with the
 - **CORS Headers**: Cross-origin resource sharing support [14](#1-13)   
 - **Custom User Model**: Extended user authentication [15](#1-14)   
   
-## 📋 Prerequisites  
   
 Before setting up the project, ensure you have the following installed:  
   
@@ -49,6 +48,29 @@ git clone https://github.com/hasanyusuf01/FrameTrack.git
 cd FrameTrack
 ```
 ---
+
+Project Structure
+FrameTrack/  
+├── FrameTrack/                 # Django backend  
+│   ├── FrameTrack/            # Project settings  
+│   │   ├── settings.py        # Django configuration  
+│   │   ├── urls.py           # URL routing  
+│   │   └── wsgi.py           # WSGI configuration  
+│   ├── api/                   # API application  
+│   │   ├── models.py         # Database models  
+│   │   ├── views.py          # API views  
+│   │   ├── serializers.py    # DRF serializers  
+│   │   └── urls.py           # API URL patterns  
+│   └── manage.py             # Django management script  
+├── client/                    # React frontend  
+│   ├── src/                  # Source code  
+│   │   ├── components/       # React components  
+│   │   ├── pages/           # Page components  
+│   │   └── App.jsx          # Main application component  
+│   ├── package.json         # Node.js dependencies  
+│   └── vite.config.js       # Vite configuration  
+
+
 
 ## 📋 Prerequisites
 
@@ -172,11 +194,20 @@ CREATE TABLE bill_items (
 
 
 ### Backend
-Navigate to and run
+Navigate to FrameTrack and run
 
-``` 
+```
+cd FrameTrack
+ 
 python manage.py runserver
  ```
+Install Python dependencies:
+```
+pip install django==5.2.4  
+pip install djangorestframework  
+pip install django-cors-headers  
+pip install django-environ
+```
 
 ### Frontend
 Navigate to Client Folder 
