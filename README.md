@@ -83,11 +83,15 @@ FrameTrack/
 ## 🗄️ PostgreSQL Setup — Local DB Creation
 
 # 1. Login as the default postgres superuser
-sudo -i -u postgres
+``` sudo -i -u postgres ```
 
 # 2. Enter the PostgreSQL shell
+```
 psql
+
+ ```
 -- 3. Create the database
+```
 CREATE DATABASE frametrack;
 
 -- 4. Create a dedicated user
@@ -190,7 +194,7 @@ CREATE TABLE bill_items (
     total_amount NUMERIC(10, 2),
     sale_date TIMESTAMP
 );
-
+```
 
 
 ### Backend
