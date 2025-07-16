@@ -1,49 +1,59 @@
-# FrameTrack - Optical Business Management System  
-  
-A comprehensive full-stack application for managing optical business operations, built with React frontend and Django REST API backend.  
-  
-## 🚀 Features  
-  
-FrameTrack provides a complete solution for optical business management with the following key features:  
-  
-- **Shop Management System**: Complete shop administration and configuration [1](#1-0)   
-- **Product Search**: Advanced product search and filtering capabilities [2](#1-1)   
-- **User Authentication**: Token-based authentication system [3](#1-2)   
-- **Admin Interface**: Django admin interface for backend management [4](#1-3)   
-- **Shop Portal**: Multi-shop management interface [5](#1-4)   
-- **Inventory Management**: Complete inventory tracking and management [6](#1-5)   
-- **Sales Monitoring**: Real-time sales tracking and analytics [7](#1-6)   
-- **Billing System**: Integrated billing and invoice management [8](#1-7)   
-- **Reporting**: Comprehensive business reporting tools [9](#1-8)   
-  
-## 🛠️ Technology Stack  
-  
-### Frontend  
-- **React**: Modern React framework with hooks and component composition [10](#1-9)   
-- **Vite**: Fast build tool and development server [11](#1-10)   
+# FrameTrack - Optical Business Management System
+
+A comprehensive full-stack application for managing optical business operations, built with a React frontend and Django REST API backend.
+
+---
+
+## 🚀 Features
+
+FrameTrack provides a complete solution for optical business management with the following key features:
+
+- **Shop Management System**: Complete shop administration and configuration  
+- **Product Search**: Advanced product search and filtering capabilities  
+- **User Authentication**: Token-based authentication system  
+- **Admin Interface**: Django admin interface for backend management  
+- **Shop Portal**: Multi-shop management interface  
+- **Inventory Management**: Complete inventory tracking and management  
+- **Sales Monitoring**: Real-time sales tracking and analytics  
+- **Billing System**: Integrated billing and invoice management  
+- **Reporting**: Comprehensive business reporting tools  
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **React**: Modern React framework with hooks and component composition  
+- **Vite**: Fast build tool and development server  
 - **React Router**: Client-side routing  
 - **Modern UI Components**: Responsive design with modern styling  
-  
-### Backend  
-- **Django 5.2.4**: Web framework for the API backend [12](#1-11)   
-- **Django REST Framework**: RESTful API development [13](#1-12)   
-- **Token Authentication**: API authentication system [3](#1-2)   
-- **CORS Headers**: Cross-origin resource sharing support [14](#1-13)   
-- **Custom User Model**: Extended user authentication [15](#1-14)   
-  
-  
-Before setting up the project, ensure you have the following installed:  
-  
+
+### Backend
+- **Django 5.2.4**: Web framework for the API backend  
+- **Django REST Framework**: RESTful API development  
+- **Token Authentication**: API authentication system  
+- **CORS Headers**: Cross-origin resource sharing support  
+- **Custom User Model**: Extended user authentication  
+
+---
+
+## 📋 Prerequisites
+
+Before setting up the project, ensure you have the following installed:
+
 - **Node.js** (v18 or higher)  
 - **npm** or **yarn**  
 - **Python** (v3.8 or higher)  
 - **pip** (Python package manager)  
-  
-## 🚀 Installation and Setup  
-  
-### 1. Clone the Repository  
-  
-```bash  
+- **PostgreSQL** installed locally  
+
+---
+
+## 🚀 Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
 git clone https://github.com/hasanyusuf01/FrameTrack.git  
 cd FrameTrack
 ```
@@ -54,21 +64,22 @@ FrameTrack/
 ├── FrameTrack/                 # Django backend  
 │   ├── FrameTrack/            # Project settings  
 │   │   ├── settings.py        # Django configuration  
-│   │   ├── urls.py           # URL routing  
-│   │   └── wsgi.py           # WSGI configuration  
+│   │   ├── urls.py            # URL routing  
+│   │   └── wsgi.py            # WSGI configuration  
 │   ├── api/                   # API application  
-│   │   ├── models.py         # Database models  
-│   │   ├── views.py          # API views  
-│   │   ├── serializers.py    # DRF serializers  
-│   │   └── urls.py           # API URL patterns  
-│   └── manage.py             # Django management script  
+│   │   ├── models.py          # Database models  
+│   │   ├── views.py           # API views  
+│   │   ├── serializers.py     # DRF serializers  
+│   │   └── urls.py            # API URL patterns  
+│   └── manage.py              # Django management script  
 ├── client/                    # React frontend  
-│   ├── src/                  # Source code  
-│   │   ├── components/       # React components  
-│   │   ├── pages/           # Page components  
-│   │   └── App.jsx          # Main application component  
-│   ├── package.json         # Node.js dependencies  
-│   └── vite.config.js       # Vite configuration  
+│   ├── src/                   # Source code  
+│   │   ├── components/        # React components  
+│   │   ├── pages/             # Page components  
+│   │   └── App.jsx            # Main application component  
+│   ├── package.json           # Node.js dependencies  
+│   └── vite.config.js         # Vite configuration  
+
 
 
 
@@ -93,13 +104,17 @@ psql
 -- 3. Create the database
 ```
 CREATE DATABASE frametrack;
-
+```
 -- 4. Create a dedicated user
+```
 CREATE USER frametrack_user WITH PASSWORD 'yourpassword';
-
+```
 -- 5. Grant access to the database
+```
 GRANT ALL PRIVILEGES ON DATABASE frametrack TO frametrack_user;
+```
 -- 6 Tabels
+```
 -- Users Table
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
